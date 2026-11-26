@@ -1,253 +1,799 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>김해공항 콜밴 전문</title>
-    <meta name="description" content="김해 지역 콜밴 서비스입니다. 렉스턴 스포츠 차량으로 넓고 쾌적하게 모십니다. 공항, 장거리 이동 환영.">
-   <meta property="og:title" content="김해공항콜밴 | 정식허가업체 합리적인가격">
-<meta property="og:description" content="넓은 적재 공간과 쾌적한 승차감의 렉스턴 스포츠. 김해/장유 전 지역, 공항, 장거리 안전하게 모십니다. 예약문의 환영">
-<meta property="og:image" content="https://callvan.github.io/Screenshot_20251014_120225_ChatGPT.jpg">
-       <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
-        }
-        body {
-            background-color: #f5f7fa;
-            color: #333;
-            line-height: 1.6;
-            padding-bottom: 90px; /* 하단 고정 버튼 공간 확보 */
-        }
-        header {
-            background-color: #1e3a8a;
-            color: white;
-            text-align: center;
-            padding: 40px 20px;
-        }
-        header h1 {
-            font-size: 28px;
-            margin-bottom: 10px;
-            font-weight: 800;
-        }
-        header p {
-            font-size: 16px;
-            color: #dbeafe;
-        }
-        .highlight-box {
-            background-color: #f59e0b;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            font-size: 18px;
-            font-weight: bold;
-        }
-        .container {
-            padding: 20px;
-        }
-        .section {
-            background: white;
-            border-radius: 12px;
-            padding: 25px 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-        }
-        .section-title {
-            font-size: 20px;
-            font-weight: bold;
-            color: #1e3a8a;
-            margin-bottom: 15px;
-            border-bottom: 2px solid #eff6ff;
-            padding-bottom: 10px;
-        }
-        
-        /* 사진 스타일 */
-        .hero-img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            display: block;
-        }
-        .content-img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            margin-bottom: 15px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        .img-caption {
-            text-align: center;
-            font-size: 14px;
-            color: #666;
-            margin-bottom: 20px;
-            font-weight: bold;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>김해공항 콜밴 정액요금 | 김국일장유김해공항콜밴 스타리아 롱바디</title>
+  <meta name="description" content="김해·장유·부산·양산·창원·울산·경주·거제·진주·대구·포항 김해공항 콜밴 24시 예약. 정식 영업용 스타리아 8인승 특장 롱바디, 캐리어 10개 이상 적재, 톨비 포함 정액제.">
+  <meta name="keywords" content="김해공항콜밴, 장유콜밴, 김해콜밴, 부산공항콜밴, 창원콜밴, 양산콜밴, 울산콜밴, 경주콜밴, 거제콜밴, 스타리아콜밴">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://callvan.github.io/">
+  <link rel="alternate" hreflang="ko" href="https://callvan.github.io/">
+  <link rel="alternate" hreflang="en" href="https://callvan.github.io/en.html">
+  <link rel="alternate" hreflang="x-default" href="https://callvan.github.io/">
 
-        .tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            margin-bottom: 15px;
-        }
-        .tag {
-            background-color: #eff6ff;
-            color: #1d4ed8;
-            padding: 6px 12px;
-            border-radius: 20px;
-            font-size: 14px;
-            font-weight: bold;
-        }
-        .feature-list {
-            list-style: none;
-        }
-        .feature-list li {
-            position: relative;
-            padding-left: 20px;
-            margin-bottom: 12px;
-            font-size: 15px;
-        }
-        .feature-list li::before {
-            content: '✓';
-            position: absolute;
-            left: 0;
-            color: #2563eb;
-            font-weight: bold;
-        }
-        
-        /* 사업자 정보 (푸터) 스타일 */
-        footer {
-            background-color: #e5e7eb;
-            color: #6b7280;
-            padding: 25px 20px;
-            font-size: 12px;
-            line-height: 1.8;
-            text-align: left;
-            margin-top: 10px;
-        }
-        footer strong {
-            color: #4b5563;
-            font-size: 14px;
-            display: block;
-            margin-bottom: 5px;
-        }
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:site_name" content="김국일장유김해공항콜밴">
+  <meta property="og:title" content="김해공항 콜밴 정액요금 | 김국일장유김해공항콜밴 스타리아 롱바디">
+  <meta property="og:description" content="김해·장유·부산·양산·창원·울산·경주·거제·진주·대구·포항 김해공항 콜밴 24시 예약. 정식 영업용 스타리아 8인승 특장 롱바디, 캐리어 10개 이상 적재, 톨비 포함 정액제.">
+  <meta property="og:url" content="https://callvan.github.io/">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TaxiService",
+  "name": "김국일장유김해공항콜밴",
+  "description": "김해·장유·부산·양산·창원·울산·경주·거제·진주·대구·포항 김해공항 콜밴 24시 예약. 정식 영업용 스타리아 8인승 특장 롱바디, 캐리어 10개 이상 적재, 톨비 포함 정액제.",
+  "url": "https://callvan.github.io/",
+  "telephone": "+82-10-5196-8204",
+  "priceRange": "50,000원~190,000원",
+  "areaServed": "경상남도, 부산광역시, 울산광역시, 대구광역시, 경상북도",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "경상남도 김해시 관동로27번길 39",
+    "addressRegion": "경상남도",
+    "addressLocality": "김해시",
+    "addressCountry": "KR"
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+    ],
+    "opens": "00:00",
+    "closes": "23:59"
+  }
+}
+  </script>
+  <style>
+:root {
+  --navy: #162233;
+  --navy-soft: #24344c;
+  --bronze: #96774d;
+  --bronze-light: #f4efe8;
+  --bg: #f7f8fa;
+  --surface: #ffffff;
+  --text: #1f2937;
+  --muted: #5c6675;
+  --border: #e5e8ee;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Noto Sans KR', 'Noto Sans JP', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.65;
+  padding-bottom: 84px;
+}
+a { color: inherit; text-decoration: none; }
+.container { max-width: 1060px; margin: 0 auto; padding: 0 20px; }
 
-        .bottom-bar {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            display: flex;
-            height: 70px;
-            box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
-            z-index: 1000;
-        }
-        .btn {
-            flex: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            font-size: 18px;
-            font-weight: bold;
-            color: white;
-            gap: 8px;
-        }
-        .btn-call {
-            background-color: #2563eb;
-        }
-        .btn-kakao {
-            background-color: #FEE500;
-            color: #000000;
-        }
-        .btn img, .btn svg {
-            width: 24px;
-            height: 24px;
-        }
-    </style>
+/* Header */
+header {
+  background: rgba(255, 255, 255, 0.96);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(8px);
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+  gap: 12px;
+}
+.brand {
+  font-weight: 800;
+  font-size: 1.05rem;
+  color: var(--navy);
+  letter-spacing: -0.02em;
+}
+.brand span { color: var(--bronze); font-weight: 700; }
+.header-nav { display: flex; align-items: center; gap: 16px; font-size: 0.92rem; color: var(--muted); font-weight: 500; }
+.header-nav a:hover { color: var(--navy); }
+.header-right { display: flex; align-items: center; gap: 8px; }
+.lang-pill {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--navy);
+  padding: 6px 11px;
+  border-radius: 8px;
+  font-size: 0.83rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.lang-pill:hover { border-color: var(--navy); }
+.header-call {
+  background: var(--navy);
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-soft) 100%);
+  color: #fff;
+  padding: 46px 0 46px;
+}
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 32px;
+  align-items: center;
+}
+.hero-badge {
+  display: inline-block;
+  font-size: 0.82rem;
+  letter-spacing: 0.02em;
+  color: #e6d6be;
+  border: 1px solid rgba(230, 214, 190, 0.35);
+  padding: 5px 12px;
+  border-radius: 999px;
+  margin-bottom: 14px;
+}
+.hero h1 {
+  font-size: clamp(1.65rem, 3.6vw, 2.35rem);
+  line-height: 1.28;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin-bottom: 14px;
+}
+.hero p.lead {
+  font-size: 0.98rem;
+  color: rgba(255, 255, 255, 0.86);
+  margin-bottom: 22px;
+}
+.hero-meta {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 24px;
+}
+.meta-pill {
+  background: rgba(255, 255, 255, 0.09);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  padding: 10px 12px;
+  border-radius: 10px;
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+.meta-pill strong { display: block; font-size: 0.96rem; color: #fff; margin-top: 3px; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 13px 20px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+.btn:hover { opacity: 0.92; transform: translateY(-1px); }
+.btn-primary { background: var(--bronze); color: #fff; }
+.btn-secondary { background: #fff; color: var(--navy); }
+.btn-outline-sm {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: 1px solid var(--navy);
+  color: var(--navy);
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+.btn-outline-sm:hover { background: var(--navy); color: #fff; }
+
+/* Hero Photo Card */
+.hero-photo-card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
+}
+.hero-main-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  background: #0f172a;
+}
+.hero-photo-caption {
+  padding: 11px 16px;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.92);
+  background: rgba(15, 23, 42, 0.55);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+.hero-thumbs {
+  display: flex;
+  gap: 8px;
+  padding: 10px 12px;
+  background: rgba(15, 23, 42, 0.72);
+  overflow-x: auto;
+}
+.hero-thumb {
+  border: 2px solid transparent;
+  border-radius: 8px;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+  overflow: hidden;
+  flex: 0 0 68px;
+  height: 48px;
+  opacity: 0.68;
+  transition: opacity 0.15s ease, border-color 0.15s ease;
+}
+.hero-thumb:hover, .hero-thumb.active {
+  opacity: 1;
+  border-color: #e6d6be;
+}
+.hero-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.hero-photo-placeholder {
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 24px;
+  color: rgba(255, 255, 255, 0.78);
+  background: rgba(255, 255, 255, 0.04);
+  font-size: 0.92rem;
+  gap: 8px;
+}
+.hero-photo-placeholder strong { color: #e6d6be; font-size: 1rem; }
+
+/* Sections */
+section { padding: 48px 0; }
+section + section { border-top: 1px solid var(--border); }
+.section-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--bronze);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.section-title {
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: var(--navy);
+  letter-spacing: -0.02em;
+  margin-bottom: 18px;
+}
+.section-desc { color: var(--muted); font-size: 0.96rem; margin-bottom: 24px; }
+
+/* Cards & Grids */
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 22px;
+}
+.card h3 { font-size: 1.05rem; color: var(--navy); margin-bottom: 8px; }
+.card p { font-size: 0.93rem; color: var(--muted); }
+
+/* Photo Gallery */
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 16px;
+  margin-top: 22px;
+  align-items: start;
+}
+.photo-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+}
+.photo-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  background: #e9edf3;
+}
+.photo-caption { padding: 12px 14px; font-size: 0.86rem; color: var(--muted); }
+
+/* Rate Table */
+.table-wrap {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow-x: auto;
+}
+table { width: 100%; border-collapse: collapse; font-size: 0.94rem; }
+th, td { padding: 13px 16px; text-align: left; border-bottom: 1px solid var(--border); }
+th { background: #f2f4f8; color: var(--navy); font-weight: 700; white-space: nowrap; }
+tr:last-child td { border-bottom: none; }
+tr:hover td { background: #fafbfd; }
+.price-cell { font-weight: 800; color: var(--navy); white-space: nowrap; }
+.row-link {
+  color: var(--bronze);
+  font-weight: 700;
+  font-size: 0.88rem;
+  white-space: nowrap;
+}
+
+/* Area Chips */
+.chip-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+.chip {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 7px 13px;
+  border-radius: 999px;
+  font-size: 0.88rem;
+  color: var(--text);
+}
+
+/* Regional Directory */
+.region-group { margin-bottom: 20px; }
+.region-group:last-child { margin-bottom: 0; }
+.region-group-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 10px;
+}
+.region-links { display: flex; flex-wrap: wrap; gap: 8px; }
+.region-link {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 8px 13px;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  color: var(--text);
+  transition: all 0.15s ease;
+}
+.region-link:hover, .region-link.active {
+  background: var(--navy);
+  color: #fff;
+  border-color: var(--navy);
+}
+.region-link span { opacity: 0.72; font-size: 0.82rem; margin-left: 4px; }
+
+/* Global Language Boxes (English & Japanese) */
+.intl-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+.intl-box {
+  border-radius: 14px;
+  padding: 24px;
+}
+.en-box {
+  background: #f1f4f9;
+  border: 1px solid #d9e1ec;
+}
+.jp-box {
+  background: var(--bronze-light);
+  border: 1px solid #e4d8c8;
+}
+.intl-box h3 { font-size: 1.06rem; color: var(--navy); margin-bottom: 10px; }
+.intl-box p { font-size: 0.91rem; color: #374151; margin-bottom: 10px; }
+.intl-box ul { padding-left: 18px; font-size: 0.89rem; color: #374151; }
+.intl-box li { margin-bottom: 5px; }
+
+/* Footer */
+footer {
+  background: var(--navy);
+  color: rgba(255, 255, 255, 0.78);
+  padding: 36px 0;
+  font-size: 0.86rem;
+}
+footer strong { color: #fff; }
+.footer-grid { display: grid; gap: 6px; }
+
+/* Mobile Sticky Bar */
+.sticky-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  border-top: 1px solid var(--border);
+  padding: 10px 14px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  z-index: 60;
+  box-shadow: 0 -4px 16px rgba(15, 23, 42, 0.08);
+}
+.sticky-btn {
+  text-align: center;
+  padding: 12px 10px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 0.94rem;
+}
+.sticky-call { background: var(--navy); color: #fff; }
+.sticky-kakao { background: var(--bronze-light); color: var(--navy); border: 1px solid #d9cbb6; }
+
+@media (max-width: 820px) {
+  .header-nav { display: none; }
+  .header-call { display: none; }
+  .hero { padding: 32px 0 36px; }
+  .hero-grid { grid-template-columns: 1fr; gap: 22px; }
+  .hero-photo-placeholder { height: 220px; }
+  .hero-meta { grid-template-columns: 1fr; }
+  .grid-3, .grid-2, .intl-grid { grid-template-columns: 1fr; }
+}
+</style>
 </head>
 <body>
-
-    <header>
-        <h1>김해공항 콜밴 전문</h1>
-        <p>고객님의 목적지까지 최단 경로 안전 운행</p>
-    </header>
-
-    <!-- 김해공항 간판 사진 (히어로 이미지) -->
-    <img src="20260517_140244.jpg" alt="김해국제공항 전경" class="hero-img">
-
-    <div class="highlight-box">
-        4인 탑승 + 짐 많을 때! (캐리어 10개 가능)
+<header>
+  <div class="container header-inner">
+    <a class="brand" href="index.html">김국일 <span>김해공항 콜밴</span></a>
+    <nav class="header-nav">
+      <a href="index.html#vehicle">차량 안내</a>
+      <a href="index.html#rates">지역별 요금</a>
+      <a href="#regions">운행 지역</a>
+      <a href="#intl">English / 日本語</a>
+    </nav>
+    <div class="header-right">
+      <a class="lang-pill" href="en.html">English</a>
+      <a class="header-call" href="tel:010-5196-8204">010-5196-8204</a>
     </div>
-
-    <div class="container">
-        <!-- 렉스턴 외관 사진 -->
-        <div class="section">
-            <div class="section-title">편안하고 안전한 전용 차량</div>
-            <img src="20260523_053425.jpg" alt="5인승 렉스턴 스포츠 콜밴" class="content-img">
-            <p class="img-caption">▲ 김해공항 게이트 앞 대기 중인 5인승 렉스턴 스포츠</p>
-            
-            <ul class="feature-list">
-                <li><strong>정식 허가 업체:</strong> 안전하고 책임 있는 운행으로 고객님의 안심을 최우선으로 합니다. (영업용 차량)</li>
-                <li><strong>김해공항 픽업/드롭오프:</strong> 원하시는 장소에서 김해공항까지 최단 경로와 정확한 시간 약속을 지킵니다.</li>
-                <li><strong>프로 드라이버:</strong> 공항 노선에 익숙한 전문 친절 기사님이 모십니다. 늦은 밤, 이른 새벽 예약 가능!</li>
-            </ul>
-        </div>
-
-        <!-- 트렁크 사진 -->
-        <div class="section">
-            <div class="section-title">압도적인 화물 적재 공간</div>
-            <img src="20230516_180937.jpg" alt="캐리어 10개 적재 가능한 대형 트렁크" class="content-img">
-            <p class="img-caption">▲ 대형 캐리어 및 골프백 다수 적재 가능</p>
-            
-            <p style="font-size: 15px; color: #555; margin-bottom: 15px;">
-                넓고 편안한 실내 공간과 방대한 트렁크를 자랑합니다. 가방은 물론, 골프백, 캐리어, 큰 짐도 거뜬히 실을 수 있으며 기사님이 직접 짐을 실어드립니다.
-            </p>
-            <div class="tags">
-                <span class="tag">#골프투어</span>
-                <span class="tag">#외국인바이어</span>
-                <span class="tag">#해외여행</span>
-                <span class="tag">#해외출장</span>
-            </div>
-        </div>
-
-        <div class="section">
-            <div class="section-title">이용 및 결제 안내</div>
-            <ul class="feature-list">
-                <li><strong>맞춤형 짐 운반:</strong> 무거운 짐은 기사님이 안전하게 실어드립니다.</li>
-                <li><strong>결제 방식:</strong> 세금계산서 발행 및 모든 카드 결제가 가능합니다.</li>
-                <li><strong>예약 문의:</strong> 하단의 전화 또는 카카오톡 버튼을 눌러 언제든 문의주세요.</li>
-            </ul>
-        </div>
+  </div>
+</header>
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="hero-badge">정식 영업용 번호판 · 2018년 개업 직영 운행 · 24시간 예약제</div>
+      <h1>김해국제공항 콜밴<br>스타리아 8인승 특장 롱바디</h1>
+      <p class="lead">김해·부산·양산·창원부터 경남·경북 전국 어디든, 대형 캐리어 10개 이상 넉넉하게 싣고 집 앞부터 공항 게이트 앞까지 정시에 모십니다.</p>
+      <div class="hero-meta">
+        <div class="meta-pill">요금 정책<strong>톨비·유류비 포함 정액제</strong></div>
+        <div class="meta-pill">적재 용량<strong>대형 캐리어 10개 이상</strong></div>
+        <div class="meta-pill">결제 및 증빙<strong>카드·세금계산서 가능</strong></div>
+      </div>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:010-5196-8204">전화 예약 010-5196-8204</a>
+        <a class="btn btn-secondary" href="http://pf.kakao.com/_EgVNn/chat" target="_blank" rel="noopener">카카오톡 실시간 견적</a>
+      </div>
     </div>
-
-    <!-- 하단 사업자 정보 (Footer) -->
-    <footer>
-        <strong>김국일장유김해공항콜밴</strong>
-        대표자: 김국일<br>
-        사업자등록번호: 116-09-12478<br>
-        주소: 경상남도 김해시 관동로27번길 39)<br>
-        종목: 개인용달, 콜밴
-    </footer>
-
-    <!-- 하단 고정 버튼 (전화 및 카카오톡) -->
-    <div class="bottom-bar">
-        <!-- 전화 걸기 버튼 -->
-        <a href="tel:010-5196-8204" class="btn btn-call">
-            <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
-            </svg>
-            전화예약
-        </a>
-        <!-- 카카오톡 상담 버튼 -->
-        <a href="https://pf.kakao.com/_NFliX" target="_blank" class="btn btn-kakao">
-            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                <path fill="#3C1E1E" d="M50 15C25.7 15 6 31.2 6 51.1c0 12.8 8.1 24.1 20.6 30.6-1.5 5.5-4.9 17.6-5.1 18.4-.2 1 1 1.5 1.7 1.1 1.3-.8 14.8-10.1 20.5-14.3 2.1.2 4.2.3 6.3.3 24.3 0 44-16.2 44-36.1S74.3 15 50 15z"></path>
-            </svg>
-            카카오톡
-        </a>
+    <div class="hero-photo-card">
+      <img class="hero-main-img" src="images/exterior-1.jpg" alt="정식 영업용 번호판 · 스타리아 8인승 특장 롱바디 외관">
+      <div class="hero-photo-caption">
+        <span class="hero-caption-text">정식 영업용 번호판 · 스타리아 8인승 특장 롱바디 외관</span>
+        <span>총 7장</span>
+      </div>
+      <div class="hero-thumbs">
+        <button type="button" class="hero-thumb active" data-src="images/exterior-1.jpg" data-caption="정식 영업용 번호판 · 스타리아 8인승 특장 롱바디 외관" onclick="selectHeroPhoto(this)" aria-label="차량 사진 1"><img src="images/exterior-1.jpg" alt="정식 영업용 번호판 · 스타리아 8인승 특장 롱바디 외관"></button>
+        <button type="button" class="hero-thumb" data-src="images/exterior-2.jpg" data-caption="정식 영업용 번호판 · 스타리아 8인승 특장 롱바디 외관" onclick="selectHeroPhoto(this)" aria-label="차량 사진 2"><img src="images/exterior-2.jpg" alt="정식 영업용 번호판 · 스타리아 8인승 특장 롱바디 외관"></button>
+        <button type="button" class="hero-thumb" data-src="images/exterior-3.jpg" data-caption="정식 영업용 번호판 · 스타리아 8인승 특장 롱바디 외관" onclick="selectHeroPhoto(this)" aria-label="차량 사진 3"><img src="images/exterior-3.jpg" alt="정식 영업용 번호판 · 스타리아 8인승 특장 롱바디 외관"></button>
+        <button type="button" class="hero-thumb" data-src="images/interior-1.jpg" data-caption="브라운 리무진 독립 시트 · 요트 바닥재 · 엠비언트 라이트" onclick="selectHeroPhoto(this)" aria-label="차량 사진 4"><img src="images/interior-1.jpg" alt="브라운 리무진 독립 시트 · 요트 바닥재 · 엠비언트 라이트"></button>
+        <button type="button" class="hero-thumb" data-src="images/interior-2.jpg" data-caption="브라운 리무진 독립 시트 · 요트 바닥재 · 엠비언트 라이트" onclick="selectHeroPhoto(this)" aria-label="차량 사진 5"><img src="images/interior-2.jpg" alt="브라운 리무진 독립 시트 · 요트 바닥재 · 엠비언트 라이트"></button>
+        <button type="button" class="hero-thumb" data-src="images/interior-3.jpg" data-caption="브라운 리무진 독립 시트 · 요트 바닥재 · 엠비언트 라이트" onclick="selectHeroPhoto(this)" aria-label="차량 사진 6"><img src="images/interior-3.jpg" alt="브라운 리무진 독립 시트 · 요트 바닥재 · 엠비언트 라이트"></button>
+        <button type="button" class="hero-thumb" data-src="images/car-trunk.jpg" data-caption="롱바디 확장 적재함 · 대형 캐리어 10개 이상 적재 가능" onclick="selectHeroPhoto(this)" aria-label="차량 사진 7"><img src="images/car-trunk.jpg" alt="롱바디 확장 적재함 · 대형 캐리어 10개 이상 적재 가능"></button>
+      </div>
     </div>
+  </div>
+</section>
 
+<section id="vehicle">
+  <div class="container">
+    <div class="section-label">VEHICLE &amp; SERVICE</div>
+    <h2 class="section-title">정식 영업용 스타리아 8인승 특장 롱바디</h2>
+    <p class="section-desc">불법 렌트카가 아닌 정식 허가 영업용(노란 번호판) 직영 차량으로 24시간 정시 운행합니다.</p>
+    <div class="grid-3">
+      <div class="card">
+        <h3>대형 캐리어 10개+ 롱바디 적재</h3>
+        <p>특수 연장 제작된 롱바디 적재함으로 골프백, 유모차, 대형 캐리어 10개 이상도 여유롭게 싣고 승객 1~6인이 쾌적하게 탑승합니다.</p>
+      </div>
+      <div class="card">
+        <h3>리무진 시트 · 프리미엄 실내</h3>
+        <p>브라운 리무진 독립 시트, 요트 바닥재, 은은한 엠비언트 라이트를 갖추어 장거리 공항 이동이나 VIP 바이어 의전에도 손색없습니다.</p>
+      </div>
+      <div class="card">
+        <h3>투명한 정액제 · 모든 증빙 가능</h3>
+        <p>주유비·기사 팁·톨게이트비 별도 청구 없는 정액제입니다. 신용카드, 법인카드, 전자세금계산서, 현금영수증 모두 발행됩니다.</p>
+      </div>
+    </div>
+    <div class="photo-grid">
+      <div class="photo-card">
+        <img src="images/exterior-1.jpg" alt="정식 영업용 번호판 · 스타리아 8인승 특장 롱바디 외관" loading="lazy">
+        <div class="photo-caption">정식 영업용 번호판 · 스타리아 8인승 특장 롱바디 외관</div>
+      </div>      <div class="photo-card">
+        <img src="images/exterior-2.jpg" alt="정식 영업용 번호판 · 스타리아 8인승 특장 롱바디 외관" loading="lazy">
+        <div class="photo-caption">정식 영업용 번호판 · 스타리아 8인승 특장 롱바디 외관</div>
+      </div>      <div class="photo-card">
+        <img src="images/exterior-3.jpg" alt="정식 영업용 번호판 · 스타리아 8인승 특장 롱바디 외관" loading="lazy">
+        <div class="photo-caption">정식 영업용 번호판 · 스타리아 8인승 특장 롱바디 외관</div>
+      </div>      <div class="photo-card">
+        <img src="images/interior-1.jpg" alt="브라운 리무진 독립 시트 · 요트 바닥재 · 엠비언트 라이트" loading="lazy">
+        <div class="photo-caption">브라운 리무진 독립 시트 · 요트 바닥재 · 엠비언트 라이트</div>
+      </div>      <div class="photo-card">
+        <img src="images/interior-2.jpg" alt="브라운 리무진 독립 시트 · 요트 바닥재 · 엠비언트 라이트" loading="lazy">
+        <div class="photo-caption">브라운 리무진 독립 시트 · 요트 바닥재 · 엠비언트 라이트</div>
+      </div>      <div class="photo-card">
+        <img src="images/interior-3.jpg" alt="브라운 리무진 독립 시트 · 요트 바닥재 · 엠비언트 라이트" loading="lazy">
+        <div class="photo-caption">브라운 리무진 독립 시트 · 요트 바닥재 · 엠비언트 라이트</div>
+      </div>      <div class="photo-card">
+        <img src="images/car-trunk.jpg" alt="롱바디 확장 적재함 · 대형 캐리어 10개 이상 적재 가능" loading="lazy">
+        <div class="photo-caption">롱바디 확장 적재함 · 대형 캐리어 10개 이상 적재 가능</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="rates">
+  <div class="container">
+    <div class="section-label">FIXED RATE TABLE</div>
+    <h2 class="section-title">김해공항 기준 지역별 정액 요금표</h2>
+    <p class="section-desc">바가지 없는 편도 기본 정액 요금입니다. 주유비, 기사 팁, 고속도로 톨게이트비 별도 청구가 없습니다. (세부 동·경유지·심야 시간대에 따라 사전 안내)</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>출발 / 도착 지역</th>
+            <th>기본 정액요금</th>
+            <th>예상 소요시간</th>
+            <th>주요 픽업 구역</th>
+            <th>안내</th>
+          </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td><strong>김해·장유</strong></td>
+          <td class="price-cell">50,000원~</td>
+          <td>약 15~25분</td>
+          <td>장유동, 율하동, 관동동, 내외동 등</td>
+          <td><a class="row-link" href="gimhae.html">상세보기 →</a></td>
+        </tr>        <tr>
+          <td><strong>김해 상동</strong></td>
+          <td class="price-cell">90,000원~</td>
+          <td>약 25~35분</td>
+          <td>상동면, 매리, 대감리, 여차리 등</td>
+          <td><a class="row-link" href="gimhae-sangdong.html">상세보기 →</a></td>
+        </tr>        <tr>
+          <td><strong>부산 전지역</strong></td>
+          <td class="price-cell">50,000원~</td>
+          <td>약 20~50분</td>
+          <td>해운대, 센텀시티, 광안리, 서면 등</td>
+          <td><a class="row-link" href="busan.html">상세보기 →</a></td>
+        </tr>        <tr>
+          <td><strong>부산 강서구</strong></td>
+          <td class="price-cell">70,000원~</td>
+          <td>약 15~25분</td>
+          <td>명지국제신도시, 명지오션시티, 에코델타시티, 녹산산업단지 등</td>
+          <td><a class="row-link" href="busan-gangseo.html">상세보기 →</a></td>
+        </tr>        <tr>
+          <td><strong>부산신항</strong></td>
+          <td class="price-cell">80,000원~</td>
+          <td>약 25~35분</td>
+          <td>부산신항만, 용원동, 가덕도, 웅동 등</td>
+          <td><a class="row-link" href="busan-newport.html">상세보기 →</a></td>
+        </tr>        <tr>
+          <td><strong>양산</strong></td>
+          <td class="price-cell">60,000원~</td>
+          <td>약 25~40분</td>
+          <td>물금읍, 증산신도시, 사송신도시, 동면 등</td>
+          <td><a class="row-link" href="yangsan.html">상세보기 →</a></td>
+        </tr>        <tr>
+          <td><strong>창원·마산·진해</strong></td>
+          <td class="price-cell">70,000원~</td>
+          <td>약 35~50분</td>
+          <td>성산구, 상남동, 용호동, 의창구 등</td>
+          <td><a class="row-link" href="changwon.html">상세보기 →</a></td>
+        </tr>        <tr>
+          <td><strong>밀양</strong></td>
+          <td class="price-cell">100,000원~</td>
+          <td>약 45~60분</td>
+          <td>삼문동, 내이동, 밀양역, 부북면 등</td>
+          <td><a class="row-link" href="miryang.html">상세보기 →</a></td>
+        </tr>        <tr>
+          <td><strong>함안</strong></td>
+          <td class="price-cell">120,000원~</td>
+          <td>약 45~60분</td>
+          <td>가야읍, 군북면, 법수면, 대산면 등</td>
+          <td><a class="row-link" href="haman.html">상세보기 →</a></td>
+        </tr>        <tr>
+          <td><strong>칠서</strong></td>
+          <td class="price-cell">120,000원~</td>
+          <td>약 45~60분</td>
+          <td>칠서면, 칠서일반산업단지, 칠원읍, 칠북면 등</td>
+          <td><a class="row-link" href="chilseo.html">상세보기 →</a></td>
+        </tr>        <tr>
+          <td><strong>창녕</strong></td>
+          <td class="price-cell">120,000원~</td>
+          <td>약 60~75분</td>
+          <td>창녕읍, 남지읍, 부곡면, 부곡온천 등</td>
+          <td><a class="row-link" href="changnyeong.html">상세보기 →</a></td>
+        </tr>        <tr>
+          <td><strong>의령</strong></td>
+          <td class="price-cell">130,000원~</td>
+          <td>약 60~75분</td>
+          <td>의령읍, 부림면, 정곡면, 지정면 등</td>
+          <td><a class="row-link" href="uiryeong.html">상세보기 →</a></td>
+        </tr>        <tr>
+          <td><strong>거제</strong></td>
+          <td class="price-cell">150,000원~</td>
+          <td>약 60~80분</td>
+          <td>고현동, 옥포동, 아주동, 상문동 등</td>
+          <td><a class="row-link" href="geoje.html">상세보기 →</a></td>
+        </tr>        <tr>
+          <td><strong>진주</strong></td>
+          <td class="price-cell">150,000원~</td>
+          <td>약 70~90분</td>
+          <td>충무공동(혁신도시), 평거동, 초전동, 가좌동 등</td>
+          <td><a class="row-link" href="jinju.html">상세보기 →</a></td>
+        </tr>        <tr>
+          <td><strong>통영</strong></td>
+          <td class="price-cell">150,000원~</td>
+          <td>약 75~95분</td>
+          <td>무전동, 죽림신도시, 도남동, 강구안 등</td>
+          <td><a class="row-link" href="tongyeong.html">상세보기 →</a></td>
+        </tr>        <tr>
+          <td><strong>경남 고성</strong></td>
+          <td class="price-cell">150,000원~</td>
+          <td>약 75~90분</td>
+          <td>고성읍, 회화면, 배둔, 거류면 등</td>
+          <td><a class="row-link" href="goseong.html">상세보기 →</a></td>
+        </tr>        <tr>
+          <td><strong>사천·삼천포</strong></td>
+          <td class="price-cell">160,000원~</td>
+          <td>약 80~100분</td>
+          <td>사천읍, 사남면, 우주항공청, KAI(한국항공우주) 등</td>
+          <td><a class="row-link" href="sacheon.html">상세보기 →</a></td>
+        </tr>        <tr>
+          <td><strong>울산</strong></td>
+          <td class="price-cell">120,000원~</td>
+          <td>약 60~80분</td>
+          <td>삼산동, 달동, 울산 남구, 중구 등</td>
+          <td><a class="row-link" href="ulsan.html">상세보기 →</a></td>
+        </tr>        <tr>
+          <td><strong>경주</strong></td>
+          <td class="price-cell">130,000원~</td>
+          <td>약 70~90분</td>
+          <td>보문관광단지, 불국사, 황리단길, 신경주역 등</td>
+          <td><a class="row-link" href="gyeongju.html">상세보기 →</a></td>
+        </tr>        <tr>
+          <td><strong>대구</strong></td>
+          <td class="price-cell">150,000원~</td>
+          <td>약 75~95분</td>
+          <td>수성구, 동대구역, 대구 중구, 달서구 등</td>
+          <td><a class="row-link" href="daegu.html">상세보기 →</a></td>
+        </tr>        <tr>
+          <td><strong>경산·청도</strong></td>
+          <td class="price-cell">150,000원~</td>
+          <td>약 70~90분</td>
+          <td>중방동, 옥산동, 하양읍, 진량공단 등</td>
+          <td><a class="row-link" href="gyeongsan.html">상세보기 →</a></td>
+        </tr>        <tr>
+          <td><strong>포항</strong></td>
+          <td class="price-cell">180,000원~</td>
+          <td>약 95~120분</td>
+          <td>영일대, 효자동, 포스텍, 포스코 등</td>
+          <td><a class="row-link" href="pohang.html">상세보기 →</a></td>
+        </tr>        <tr>
+          <td><strong>구미</strong></td>
+          <td class="price-cell">190,000원~</td>
+          <td>약 110~130분</td>
+          <td>구미국가산단(1~5공단), 인동동, 옥계동, 송정동 등</td>
+          <td><a class="row-link" href="gumi.html">상세보기 →</a></td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-label">AVAILABLE SERVICES</div>
+    <h2 class="section-title">공항 이동부터 기업 의전·관광 투어까지</h2>
+    <div class="grid-2">
+      <div class="card">
+        <h3>공항 픽업 · 샌딩 &amp; 24시 예약</h3>
+        <p>김해국제공항 출국·입국에 맞춰 이른 새벽이나 심야에도 집 앞부터 공항 게이트 앞까지 정확하게 모셔다 드립니다.</p>
+      </div>
+      <div class="card">
+        <h3>기업 출장 · 바이어 · 골프 · 관광 투어</h3>
+        <p>외국인 바이어 의전, 유학생 차량, 골프장 왕복, 웨딩카, 부산·경주·거제 프라이빗 시티투어 및 전국 장거리 운행이 모두 가능합니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="regions">
+  <div class="container">
+    <div class="section-label">SERVICE AREAS</div>
+    <h2 class="section-title">경남·경북·부산 전 지역 김해공항 콜밴 안내</h2>
+    <p class="section-desc">지역을 선택하시면 해당 지역 기준 정액 요금과 주요 픽업 가능 구역을 확인하실 수 있습니다.</p>
+    <div class="region-group">
+      <div class="region-group-title">김해·부산·양산</div>
+      <div class="region-links">
+        <a class="region-link" href="gimhae.html">김해·장유 콜밴 <span>50,000원~</span></a><a class="region-link" href="gimhae-sangdong.html">김해 상동 콜밴 <span>90,000원~</span></a><a class="region-link" href="busan.html">부산 전지역 콜밴 <span>50,000원~</span></a><a class="region-link" href="busan-gangseo.html">부산 강서구 콜밴 <span>70,000원~</span></a><a class="region-link" href="busan-newport.html">부산신항 콜밴 <span>80,000원~</span></a><a class="region-link" href="yangsan.html">양산 콜밴 <span>60,000원~</span></a>
+      </div>
+    </div>    <div class="region-group">
+      <div class="region-group-title">경남권</div>
+      <div class="region-links">
+        <a class="region-link" href="changwon.html">창원·마산·진해 콜밴 <span>70,000원~</span></a><a class="region-link" href="miryang.html">밀양 콜밴 <span>100,000원~</span></a><a class="region-link" href="haman.html">함안 콜밴 <span>120,000원~</span></a><a class="region-link" href="chilseo.html">칠서 콜밴 <span>120,000원~</span></a><a class="region-link" href="changnyeong.html">창녕 콜밴 <span>120,000원~</span></a><a class="region-link" href="uiryeong.html">의령 콜밴 <span>130,000원~</span></a><a class="region-link" href="geoje.html">거제 콜밴 <span>150,000원~</span></a><a class="region-link" href="jinju.html">진주 콜밴 <span>150,000원~</span></a><a class="region-link" href="tongyeong.html">통영 콜밴 <span>150,000원~</span></a><a class="region-link" href="goseong.html">경남 고성 콜밴 <span>150,000원~</span></a><a class="region-link" href="sacheon.html">사천·삼천포 콜밴 <span>160,000원~</span></a>
+      </div>
+    </div>    <div class="region-group">
+      <div class="region-group-title">울산·대구·경북권</div>
+      <div class="region-links">
+        <a class="region-link" href="ulsan.html">울산 콜밴 <span>120,000원~</span></a><a class="region-link" href="gyeongju.html">경주 콜밴 <span>130,000원~</span></a><a class="region-link" href="daegu.html">대구 콜밴 <span>150,000원~</span></a><a class="region-link" href="gyeongsan.html">경산·청도 콜밴 <span>150,000원~</span></a><a class="region-link" href="pohang.html">포항 콜밴 <span>180,000원~</span></a><a class="region-link" href="gumi.html">구미 콜밴 <span>190,000원~</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="intl">
+  <div class="container">
+    <div class="section-label">GLOBAL GUESTS</div>
+    <h2 class="section-title">English &amp; 日本語 Reservation Guide</h2>
+    <div class="intl-grid">
+      <div class="intl-box en-box" id="english">
+        <h3>Gimhae Airport Private Van &amp; Jumbo Taxi (English)</h3>
+        <p>Safe, punctual door-to-door transfers in a government-licensed Hyundai Staria 8-seater long-body van.</p>
+        <ul>
+          <li>Capacity: 1–6 passengers + 10+ large suitcases</li>
+          <li>All-Inclusive Fixed Rates: From <strong>KRW 50,000</strong> (No extra tolls, fuel, or tips)</li>
+          <li>24/7 reservation · Credit card &amp; receipt available</li>
+          <li>Contact: <strong>+82-10-5196-8204</strong> · <a href="http://pf.kakao.com/_EgVNn/chat" target="_blank" rel="noopener" style="text-decoration:underline; font-weight:700;">KakaoTalk Chat</a></li>
+        </ul>
+        <a class="btn-outline-sm" href="en.html">View Full English Page &amp; Rates →</a>
+      </div>
+      <div class="intl-box jp-box" id="japanese">
+        <h3>釜山金海国際空港 貸切ジャンボタクシー・コールバン (日本語)</h3>
+        <p>韓国政府公認の営業用ナンバーを取得した安心の専用車（新型スタリア・ロングボディ特装車）で安全にご案内いたします。</p>
+        <ul>
+          <li>乗車定員：最大6〜7名様（大型スーツケース10個以上積載可能）</li>
+          <li>明朗な定額制：高速道路通行料・燃料費・ドライバーチップの追加請求は一切ございません。</li>
+          <li>クレジットカード決済・領収書発行可能 ／ 24時間事前予約制</li>
+          <li>ご予約：<strong>+82-10-5196-8204</strong> ／ <a href="http://pf.kakao.com/_EgVNn/chat" target="_blank" rel="noopener" style="text-decoration:underline; font-weight:700;">KakaoTalk チャット相談</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="container footer-grid">
+    <div><strong>김국일장유김해공항콜밴</strong> (대표: 김국일)</div>
+    <div>사업자등록번호: 116-09-12478 (일반과세자 · 정식 허가 영업용 개인용달/콜밴 · 2018년 10월 29일 개업)</div>
+    <div>소재지: 경상남도 김해시 관동로27번길 39</div>
+    <div>24시 예약 문의: <a href="tel:010-5196-8204"><strong>010-5196-8204</strong></a> · 해외 발신: +82-10-5196-8204 · <a href="http://pf.kakao.com/_EgVNn/chat" target="_blank" rel="noopener" style="text-decoration:underline;">카카오톡 채널 상담</a> · <a href="en.html" style="text-decoration:underline;">English Page</a></div>
+  </div>
+</footer>
+<div class="sticky-bar">
+  <a class="sticky-btn sticky-call" href="tel:010-5196-8204">전화 예약 010-5196-8204</a>
+  <a class="sticky-btn sticky-kakao" href="http://pf.kakao.com/_EgVNn/chat" target="_blank" rel="noopener">카카오톡 간편문의</a>
+</div>
+<script>
+function selectHeroPhoto(btn) {
+  var card = btn.closest('.hero-photo-card');
+  var mainImg = card.querySelector('.hero-main-img');
+  var capEl = card.querySelector('.hero-caption-text');
+  mainImg.src = btn.getAttribute('data-src');
+  mainImg.alt = btn.getAttribute('data-caption');
+  if (capEl) capEl.textContent = btn.getAttribute('data-caption');
+  card.querySelectorAll('.hero-thumb').forEach(function(el) {
+    el.classList.remove('active');
+  });
+  btn.classList.add('active');
+}
+</script>
 </body>
 </html>
